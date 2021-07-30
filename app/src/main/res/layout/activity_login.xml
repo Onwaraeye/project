@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="70dp"
+        android:gravity="center_vertical">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/logo_1" />
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/bg_login"
+            android:hint="@string/email"
+            android:textColorHint="@color/bg_bt_confirm"
+            android:textSize="13sp"
+            android:layout_marginBottom="15dp"/>
+
+        <EditText
+            android:id="@+id/editTextTextPassword2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:inputType="textPassword"
+            android:background="@drawable/bg_login"
+            android:hint="@string/password"
+            android:textColorHint="@color/bg_bt_confirm"
+            android:textSize="13sp"
+            android:layout_marginBottom="6dp"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:gravity="end"
+            android:text="@string/forget_password"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:layout_marginBottom="9dp"/>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/bgbuttonlogin"
+            android:textColor="@color/blue"
+            android:text="@string/login" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
